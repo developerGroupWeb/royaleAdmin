@@ -49,15 +49,19 @@
                                 <div class="col-12 col-md-9">
                                     <select name="rubric" id="select" class="form-control">
                                         <option value="">Selectionner la rubrique</option>
-                                        <option value="Politiques">Politique</option>
-                                        <option value="Economies">Economie</option>
-                                        <option value="Opinions">Opinion</option>
-                                        <option value="Enquetes">Enquetes</option>
-                                        <option value="Sports">Sport</option>
-                                        <option value="Santes">Sante</option>
-                                        <option value="Internationals">Internationale</option>
-                                        <option value="Educations">Education</option>
-                                        <option value="Tech-Innovations">Tech-Innovation</option>
+                                        <option value="politique">Politique</option>
+                                        <option value="économie">Economie</option>
+                                        <option value="opinion">Opinion</option>
+                                        <option value="enquêtes">Enquetes</option>
+                                        <option value="sport">Sport</option>
+                                        <option value="santé">Santé</option>
+                                        <option value="international">International</option>
+                                        <option value="éducation">Education</option>
+                                        <option value="tech-Innovation">Tech-Innovation</option>
+                                        <option value="dossiers-d'actualité">Dossiers d'actualité</option>
+                                        <option value="le-conseil-des-ministres">Le conseil des ministres</option>
+                                        <option value="histoires-d'afrique">Histoires d'afrique</option>
+                                        <option value="tv">La royaleNews TV</option>
 
                                     </select>
                                     <div class="alert-danger">
