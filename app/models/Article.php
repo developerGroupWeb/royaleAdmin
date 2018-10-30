@@ -9,7 +9,7 @@ class Article extends Model
     public $timestamps  = false;
     protected $fillable = [
         'title', 'rubric', 'content', 'contents',
-        'position', 'start_at', 'pictures', 'other_pictures',
+        'position', 'start_at', 'pictures',
         'slug',
     ];
 
