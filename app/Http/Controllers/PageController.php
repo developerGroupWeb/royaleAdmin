@@ -27,10 +27,6 @@ class PageController extends Controller
         $pictureName = time().'.'.request()->picture->getClientOriginalExtension();
         $request->picture->storeAs('pictures', $pictureName);
 
-        $folderFile = $request->other_picture->store('other_pictures');
-        $file   = explode('/', $folderFile);
-        $other_pictureName = $file[1];
-
         $insert = redactionService::insertArticle($request,$pictureName);
         if($insert)
         {

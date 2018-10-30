@@ -12,7 +12,7 @@ use App\models\Article;
 use Carbon\Carbon;
 class redactionService extends Article
 {
-    static function insertArticle($request, $picture, $other_picture)
+    static function insertArticle($request, $picture)
     {
         $insert = Article::create([
             'title'    => $request->get('title'),
