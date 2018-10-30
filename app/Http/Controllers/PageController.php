@@ -31,7 +31,7 @@ class PageController extends Controller
         $file   = explode('/', $folderFile);
         $other_pictureName = $file[1];
 
-        $insert = redactionService::insertArticle($request,$pictureName, $other_pictureName);
+        $insert = redactionService::insertArticle($request,$pictureName);
         if($insert)
         {
             session()->flash('message', 'Your article has been successfully inserted');

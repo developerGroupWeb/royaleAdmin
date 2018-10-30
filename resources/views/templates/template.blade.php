@@ -63,6 +63,9 @@
     <script src="{{asset('vendor/select2/select2.min.js')}}">
     </script>
 
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=qk0t0ff9zl1t984pz4tvf3lgnph8lk1tzcdjpfhxpldsmb5k"></script> 
+    <script type="text/javascript">tinymce.init({ selector:'textarea' });</script>
+
     <!-- Main JS-->
     <script src="{{asset('js/main.js')}}"></script>
 

@@ -21,7 +21,6 @@ class redactionService extends Article
             'contents' => $request->get('contents'),
             'position' => $request->get('position'),
             'pictures' => $picture,
-            'other_pictures' => $other_picture,
             'start_at' => Carbon::now(),
             'slug'     => str_slug($request->get('title')),
         ]);
