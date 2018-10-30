@@ -30,7 +30,6 @@ class articleFormsRequests extends FormRequest
             'contents' => ['required', 'string'],
             'position' => ['required', 'string'],
             'picture'  => ['required', 'file', 'max:1024'],
-            'other_picture' => ['required', 'file', 'max:10024'],
         ];
     }
 }
