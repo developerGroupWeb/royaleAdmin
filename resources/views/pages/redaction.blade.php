@@ -1,7 +1,9 @@
 @extends('templates.template')
 
 @section('content')
+
     @include('templates.nav')
+
 <!-- MAIN CONTENT-->
 <div class="main-content">
 
