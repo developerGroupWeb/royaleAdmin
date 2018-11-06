@@ -13,7 +13,8 @@ namespace App\Services;
 
 class selectService
 {
-    static private $position = ['Articles a la une', 'Articles priorite 2', 'Articles priorite 3', 'Article top info'],
+    static private $result,
+                   $position = ['Articles a la une', 'Articles priorite 2', 'Articles priorite 3', 'Article top info'],
                    $rubric = [
                        'politique' => 'Politique',
                        'économie'  => 'Economie',
@@ -28,16 +29,24 @@ class selectService
                        'le-conseil-des-ministres' => 'Le conseil des ministres',
                        'histoires-d\'afrique' => 'istoires d\'afrique',
                        'tv' => 'La royaleNews TV'
-    ];
+                   ];
 
     static function validateValueOptionForPosition($name, $data)
     {
-        if(!array_key_exists($name, $_POST) || !isset(self::$position[$data]))
-            return 1;
+        $objPosition = (object)self::$position;
+
+        if(!array_key_exists($name, $_POST) || !isset($objPosition->$data))
+            self::$result = 1;
+
+        return self::$result;
     }
     static function validateValueOptionForRubric($name, $data)
     {
-        if(!array_key_exists($name, $_POST) || !isset(self::$rubric[$data]))
-            return 1;
+        $objRubric = (object)self::$rubric;
+
+        if(!array_key_exists($name, $_POST) || !isset($objRubric->$data))
+            self::$result = 1;
+
+        return self::$result;
     }
 }
