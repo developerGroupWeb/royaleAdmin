@@ -25,6 +25,7 @@
 
         @yield('content')
 
+
     </div>
 
      @stack('script')
