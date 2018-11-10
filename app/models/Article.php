@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    public $timestamps  = false;
+    public $timestamps  = true;
+
     protected $fillable = [
         'title', 'rubric', 'content', 'contents',
-        'position', 'start_at', 'pictures',
+        'position', 'pictures',
         'slug',
     ];
 
