@@ -17,6 +17,8 @@
 
     <!-- Title Page-->
     <title>{{$title ?? 'Admin'}}</title>
+    
+    @stack('script')
 
 </head>
 <body class="animsition">
